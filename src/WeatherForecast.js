@@ -2,13 +2,12 @@ import React from "react";
 import "./Weather.css";
 import Weathericon from "./Weathericon";
 import axios from "axios";
-export default function WeatherForecast(response) {
-  console.log(response);
-  function handleResponse() {}
+export default function WeatherForecast(properties) {
+  function handleResponse(response) {}
   const apiKey = "be81f193e065bf5feb2d944c7336968b";
-  let longitude = 40;
-  let latitude = 29;
-  let onecallapi = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+  let latitude = properties.coordinates.lat;
+  let longitude = properties.coordinates.lon;
+  let onecallapi = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   axios.get(onecallapi).then(handleResponse);
   return (
     <div className="weatherforecast">

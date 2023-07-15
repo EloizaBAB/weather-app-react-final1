@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import Weatherinfo from "./Weatherinfo";
 import axios from "axios";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(properties) {
   const [city, setCity] = useState(" ");
@@ -10,6 +11,7 @@ export default function Weather(properties) {
   function displayWeather(response) {
     setResult(true);
     setWeatherobj({
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
@@ -48,6 +50,7 @@ export default function Weather(properties) {
         <h1 className="city">{city} </h1>
 
         <Weatherinfo info={weatherobj} />
+        <WeatherForecast coordinates={weatherobj.coord} />
       </div>
     );
   } else {
