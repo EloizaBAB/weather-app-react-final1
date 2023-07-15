@@ -1,0 +1,23 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  justify-items: center;
+  border: 0.5px solid #303134;
+  margin: 60px;
+  background-color: #5f90d2;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+body {
+  background-color: whitesmoke;
+}
+.title-search {
+  color: whitesmoke;
+  padding-left: 50px;
+  padding-top: 30px;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-align: enter;
+}

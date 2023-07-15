@@ -1,0 +1,59 @@
+li {
+  list-style-type: none;
+}
+.temperature {
+  font-size: 75px;
+  color: whitesmoke;
+}
+.celsius,
+.fahrenheit {
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+}
+form {
+  margin-left: 50px;
+  padding-top: 30px;
+}
+form input,
+button {
+  font-size: 20px;
+}
+.city {
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+}
+.date {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+ul.child {
+  display: inline-block;
+}
+.description,
+.wind,
+.humidity {
+  color: whitesmoke;
+  font-size: 30px;
+  padding: 11px;
+}
+.description {
+  text-transform: uppercase;
+}
+.weatherforecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 100px;
+  justify-content: center;
+  justify-items: center;
+  grid-column-gap: 200px;
+}
+.forecast-temperatures {
+  display: inline-block;
+}
