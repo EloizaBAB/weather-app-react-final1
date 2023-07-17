@@ -10,9 +10,7 @@ function App() {
         <Weather />
       </div>
       <div className="container-forecast">
-        <div className="forecast-grid">
-          <WeatherForecast />
-        </div>
+        <div className="forecast-grid"></div>
       </div>
     </div>
   );
