@@ -14,7 +14,18 @@ export default function WeatherForecast(properties) {
     console.log(forecast);
     return (
       <div className="weatherforecast">
-        <WeatherForecastDay data={forecast[0]} />
+        <div className="dailyforecast">
+          {" "}
+          {forecast.map(function (dailyforecast, index) {
+            if (index < 6) {
+              return (
+                <div className="dailyindex" key={index}>
+                  <WeatherForecastDay data={dailyforecast} />
+                </div>
+              );
+            }
+          })}
+        </div>
       </div>
     );
   } else {
