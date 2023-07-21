@@ -17,7 +17,12 @@ export default function WeatherTemperature(properties) {
         <span className="temperature">{Math.round(properties.celsius)}</span>
         <span className="celsius">°C | </span>
         <span>
-          <a href="/" onClick={convertToFahrenheit} className="fahrenheit">
+          <a
+            href="/"
+            onClick={convertToFahrenheit}
+            className="fahrenheit"
+            rel="noopener noreferrer"
+          >
             F°
           </a>
         </span>
@@ -30,7 +35,12 @@ export default function WeatherTemperature(properties) {
         <span>{Math.round(fahrenheit)}</span>
         <span>
           {" "}
-          <a href="/" onClick={convertToCelsius} className="celsius">
+          <a
+            href="/"
+            onClick={convertToCelsius}
+            className="celsius"
+            rel="noopener noreferrer"
+          >
             °C |
           </a>
         </span>
