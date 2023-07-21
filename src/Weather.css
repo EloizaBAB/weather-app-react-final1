@@ -23,8 +23,9 @@ button {
 .city {
   color: whitesmoke;
   text-transform: uppercase;
-  text-align: center;
-  padding: 30px;
+  margin-left: 100px;
+  width: 120px;
+  padding-bottom: 100px;
 }
 .date {
   color: whitesmoke;
@@ -52,7 +53,20 @@ ul.child {
   justify-content: center;
   justify-items: center;
   grid-column-gap: 200px;
+  color: whitesmoke;
+  text-transform: uppercase;
 }
 .forecast-temperatures {
   display: inline-block;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 100px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
 }

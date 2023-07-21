@@ -46,11 +46,14 @@ export default function Weather(properties) {
   if (result === true) {
     return (
       <div>
-        {form}
-        <h1 className="city">{city} </h1>
-
-        <Weatherinfo info={weatherobj} />
-        <WeatherForecast coordinates={weatherobj.coord} />
+        <div className="container2">
+          {form}
+          <h1 className="city">{city} </h1>
+        </div>
+        <div className="container">
+          <Weatherinfo info={weatherobj} />
+          <WeatherForecast coordinates={weatherobj.coord} />
+        </div>
       </div>
     );
   } else {
