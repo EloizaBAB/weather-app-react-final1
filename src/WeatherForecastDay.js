@@ -16,7 +16,7 @@ export default function WeatherForecastDay(properties) {
     return days[day];
   }
   return (
-    <div>
+    <div className="forecast-days">
       <div className="forescast-day">{day()}</div>
 
       <Weathericon code={properties.data.weather[0].icon} size="30" />
