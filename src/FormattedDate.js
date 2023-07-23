@@ -22,7 +22,7 @@ export default function FormattedDate(properties) {
   }
   return (
     <div className="date">
-      {day},{hours}:{minutes}
+      {day}, {hours}h:{minutes}min
     </div>
   );
 }
