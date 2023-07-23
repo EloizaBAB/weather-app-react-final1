@@ -7,17 +7,18 @@ li {
 .temperature {
   font-size: 75px;
   color: var(--text-color);
+  padding: 20px;
 }
 .celsius,
 .fahrenheit {
-  font-size: 30px;
+  font-size: 25px;
 }
 a {
   text-decoration: none;
 }
 form {
-  margin-left: 50px;
   padding-top: 30px;
+  margin-left: 50px;
 }
 form input::placeholder {
   color: whitesmoke;
@@ -33,14 +34,15 @@ button {
 .city {
   color: var(--text-color);
   text-transform: uppercase;
-  margin-left: 100px;
-  width: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  text-shadow: #accbee 2px 2px 0.5px;
+  text-align: center;
 }
+
 .date {
   color: var(--text-color);
   font-size: 30px;
-  text-align: center;
+  padding-left: 50px;
   letter-spacing: 1px;
 }
 ul.child {
@@ -59,10 +61,10 @@ ul.child {
 .dailyforecast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 50px;
+  grid-row-gap: 100px;
   justify-content: center;
   justify-items: center;
-  grid-column-gap: 200px;
+  grid-column-gap: 100px;
   color: whitesmoke;
   text-transform: uppercase;
 }
@@ -77,11 +79,5 @@ ul.child {
 
 .container2 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 100px;
-}
-.weather-info {
-}
-div.weatherforecast {
-  width: fit-content;
+  grid-template-columns: 1fr 1fr;
 }
