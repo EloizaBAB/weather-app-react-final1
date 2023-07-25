@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-image: linear-gradient(to right, #767e84 0%, #596164 100%);
 }
 .title-search {
   color: #567495;
