@@ -13,39 +13,34 @@ export default function WeatherTemperature(properties) {
   }
   if (unit === "celsius") {
     return (
-      <span>
+      <>
         <span className="temperature">{Math.round(properties.celsius)}</span>
         <span className="celsius">°C | </span>
-        <span>
-          <a
-            href="/"
-            onClick={convertToFahrenheit}
-            className="fahrenheit"
-            rel="noopener noreferrer"
-          >
-            F°
-          </a>
-        </span>
-      </span>
+        <a
+          href="/"
+          onClick={convertToFahrenheit}
+          className="fahrenheit"
+          rel="noopener noreferrer"
+        >
+          F°
+        </a>
+      </>
     );
   } else {
     let fahrenheit = (properties.celsius * 9) / 5 + 32;
     return (
-      <span>
-        <span>{Math.round(fahrenheit)}</span>
-        <span>
-          {" "}
-          <a
-            href="/"
-            onClick={convertToCelsius}
-            className="celsius"
-            rel="noopener noreferrer"
-          >
-            °C |
-          </a>
-        </span>
+      <>
+        <span>{Math.round(fahrenheit)}</span>{" "}
+        <a
+          href="/"
+          onClick={convertToCelsius}
+          className="celsius"
+          rel="noopener noreferrer"
+        >
+          °C |
+        </a>
         <span className="fahrenheit">F°</span>
-      </span>
+      </>
     );
   }
 }

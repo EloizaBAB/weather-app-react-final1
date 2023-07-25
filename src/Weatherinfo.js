@@ -13,7 +13,9 @@ export default function Weatherinfo(properties) {
             celsius={properties.info.temperature}
             className="child"
           />
-          <Weathericon code={properties.info.icon} size={properties.size} />
+          <div className="icon">
+            <Weathericon code={properties.info.icon} size={properties.size} />
+          </div>
         </li>
 
         <li className="description"> {properties.info.description}</li>
