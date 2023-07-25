@@ -57,6 +57,6 @@ export default function Weather(properties) {
       </div>
     );
   } else {
-    return form;
+    return <div className="initial-form">{form}</div>;
   }
 }
