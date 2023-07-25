@@ -19,3 +19,14 @@ body {
   text-shadow: #accbee 1px 2px 0.5px;
   text-align: center;
 }
+@media (max-width: 700px) {
+  body {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  }
+  .App {
+    margin: 0;
+  }
+  .title-search {
+    font-size: 30px;
+  }
+}
